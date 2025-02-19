@@ -44,44 +44,4 @@ public class GetConfigValue {
             return null;
         }
     }
-
-    public String GetCol1(){
-        try (InputStream input = GetConfigValue.class.getResourceAsStream("/config.properties")) {
-            Properties prop = new Properties();
-            // load a properties file
-            prop.load(input);
-            // get the property value and print it out
-            return prop.getProperty("col1");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-    }
-
-    public String GetCol2(){
-        try (InputStream input = GetConfigValue.class.getResourceAsStream("/config.properties")) {
-            Properties prop = new Properties();
-            // load a properties file
-            prop.load(input);
-            // get the property value and print it out
-            return prop.getProperty("col2");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-    }
-
-    public String GetCol3(){
-        try (InputStream input = GetConfigValue.class.getResourceAsStream("/config.properties")) {
-            Properties prop = new Properties();
-            // load a properties file
-            prop.load(input);
-            // get the property value and print it out
-            return prop.getProperty("col3");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-    }
-
 }
